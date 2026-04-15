@@ -10,21 +10,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
   :root {
-    --crimson:    #8B1A2A;
-    --crimson-lt: #B5243A;
-    --crimson-dk: #5C1020;
+    --crimson:    #D97757;
+    --crimson-lt: #E89070;
+    --crimson-dk: #B5613E;
     --gold:       #C9933A;
     --gold-lt:    #E8B96A;
-    --ink:        #1A1118;
-    --ash:        #F5F3F1;
-    --ash-dk:     #EAE6E2;
-    --mist:       #D8D2CC;
-    --charcoal:   #3D3540;
-    --white:      #FDFCFB;
+    --ink:        #141413;
+    --ash:        #faf9f5;
+    --ash-dk:     #F5F4EF;
+    --mist:       #e5e4df;
+    --charcoal:   #5c5c5a;
+    --white:      #ffffff;
     --font-head:  'DM Serif Display', Georgia, serif;
     --font-body:  'DM Sans', system-ui, sans-serif;
-    --shadow:     0 4px 24px rgba(26,17,24,.10);
-    --shadow-lg:  0 12px 48px rgba(26,17,24,.16);
+    --shadow:     0 4px 24px rgba(20,20,19,.10);
+    --shadow-lg:  0 12px 48px rgba(20,20,19,.16);
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -334,8 +334,7 @@
   <div class="cover-content">
     <div class="cover-tag">HTS Code 6907 · Sector Cerámico</div>
     <h1>Análisis de Mercado<br>República de Guatemala</h1>
-    <p class="cover-meta">Baldosas y Revestimientos Cerámicos sin Vidriar &nbsp;·&nbsp; <span>Enero 2019 – Enero 2026</span></p>
-    <p class="cover-meta">Fuente: <span>Veritrade – Datos Oficiales de Importación</span> &nbsp;·&nbsp; Elaborado: <span>Abril 2026</span></p>
+    <p class="cover-meta">Baldosas y Revestimientos Cerámicos sin Vidriar &nbsp;·&nbsp; <span>2023 – 2024</span></p>
   </div>
 </header>
 
@@ -343,17 +342,17 @@
 <div class="kpi-strip">
   <div class="kpi">
     <div class="kpi-label">Total Importado</div>
-    <div class="kpi-val">US$ 637.5M</div>
-    <div class="kpi-sub">CIF acumulado 7 años</div>
+    <div class="kpi-val">US$ 197.6M</div>
+    <div class="kpi-sub">CIF acumulado 2 años</div>
   </div>
   <div class="kpi">
     <div class="kpi-label">Superficie Total</div>
-    <div class="kpi-val">74.7M m²</div>
-    <div class="kpi-sub">Estimación 20 kg/m²</div>
+    <div class="kpi-val">22.8M m²</div>
+    <div class="kpi-sub">Volumen 2023–2024</div>
   </div>
   <div class="kpi">
     <div class="kpi-label">Precio Promedio</div>
-    <div class="kpi-val">US$ 8.53/m²</div>
+    <div class="kpi-val">US$ 8.67/m²</div>
     <div class="kpi-sub">CIF promedio total</div>
   </div>
 </div>
@@ -369,8 +368,8 @@
     </div>
     <div class="card">
       <div class="prose">
-        <p>El presente reporte analiza el comportamiento de las importaciones de cerámica de Guatemala bajo el código arancelario <strong>HS 6907</strong> (Baldosas, losas y placas cerámicas sin vidriar) durante el período comprendido entre enero de 2019 y enero de 2026. Los datos fueron extraídos de la plataforma Veritrade y reflejan registros oficiales de importación.</p>
-        <p>Durante este período de aproximadamente siete años, Guatemala importó un total de <strong>US$ 637.5 millones CIF</strong>, equivalente a aproximadamente <strong>74.7 millones de metros cuadrados</strong>. El precio promedio CIF fue de <strong>US$ 8.53/m²</strong>. Este mercado se consolida como altamente dinámico, con participación de exportadores de cuatro continentes.</p>
+        <p>El presente reporte analiza el comportamiento de las importaciones de cerámica de Guatemala bajo el código arancelario <strong>HS 6907</strong> (Baldosas, losas y placas cerámicas sin vidriar) durante el período comprendido entre enero de 2023 y diciembre de 2024. </p>
+        <p>Durante este período de los dos años analizados, Guatemala importó un total de <strong>US$ 197.6 millones CIF</strong>, equivalente a aproximadamente <strong>22.8 millones de metros cuadrados</strong>. El precio promedio CIF fue de <strong>US$ 8.67/m²</strong>. Este mercado se consolida como altamente dinámico, con participación de exportadores de cuatro continentes.</p>
       </div>
       <div class="highlights">
         <div class="hl"><strong>Líderes de mercado</strong>India y México concentran más del 51% del valor total importado (~20.7M m² y 20.6M m² respectivamente).</div>
@@ -391,7 +390,7 @@
       <div class="card">
         <div class="card-title">Desglose por subpartida – US$ CIF</div>
         <div class="chart-wrap"><canvas id="pieChart" height="260"></canvas></div>
-        <p class="chart-caption">Gráfico 1 – Distribución porcentual HS 6907 (2019–2026)</p>
+        <p class="chart-caption">Gráfico 1 – Distribución porcentual HS 6907 (2023–2024)</p>
       </div>
       <div class="card" style="padding:0; overflow:hidden;">
         <table class="data-table">
@@ -423,7 +422,7 @@
       <div class="card-title">Mapa de flujos de importación – Guatemala HS 6907</div>
       <div id="map"></div>
       <div class="map-legend">
-        <div class="map-legend-item"><div class="map-legend-dot" style="background:#8B1A2A;width:20px;height:20px;"></div> &gt; US$ 100M</div>
+        <div class="map-legend-item"><div class="map-legend-dot" style="background:#D97757;width:20px;height:20px;"></div> &gt; US$ 100M</div>
         <div class="map-legend-item"><div class="map-legend-dot" style="background:#C9933A;width:15px;height:15px;"></div> US$ 50–100M</div>
         <div class="map-legend-item"><div class="map-legend-dot" style="background:#4A7CA8;width:12px;height:12px;"></div> US$ 20–50M</div>
         <div class="map-legend-item"><div class="map-legend-dot" style="background:#7DB87D;width:9px;height:9px;"></div> US$ 10–22M</div>
@@ -444,16 +443,16 @@
       <table class="data-table">
         <thead><tr><th>#</th><th>País</th><th>Registros</th><th>US$ CIF Total</th><th>Total m²</th><th>US$/m²</th><th>Segmento</th></tr></thead>
         <tbody>
-          <tr><td class="rank">1</td><td>🇮🇳 India</td><td>735</td><td><strong>US$ 163.1M</strong></td><td>20,747,323</td><td>$7.86</td><td><span class="badge badge-mass">Masivo</span></td></tr>
-          <tr><td class="rank">2</td><td>🇲🇽 México</td><td>367</td><td><strong>US$ 160.6M</strong></td><td>20,623,505</td><td>$7.79</td><td><span class="badge badge-mass">Masivo</span></td></tr>
-          <tr><td class="rank">3</td><td>🇨🇳 China</td><td>1,475</td><td><strong>US$ 94.0M</strong></td><td>13,048,619</td><td>$7.20</td><td><span class="badge badge-mass">Masivo</span></td></tr>
-          <tr><td class="rank">4</td><td>🇪🇸 España</td><td>2,152</td><td><strong>US$ 80.2M</strong></td><td>6,562,241</td><td>$12.23</td><td><span class="badge badge-mid">Medio</span></td></tr>
-          <tr><td class="rank">5</td><td>🇧🇷 Brasil</td><td>1,636</td><td>US$ 42.0M</td><td>6,128,982</td><td>$6.85</td><td><span class="badge badge-mass">Masivo</span></td></tr>
-          <tr><td class="rank">6</td><td>🇦🇪 Emiratos Árabes</td><td>110</td><td>US$ 22.0M</td><td>3,406,202</td><td>$6.45</td><td><span class="badge badge-mass">Masivo</span></td></tr>
-          <tr><td class="rank">7</td><td>🇮🇹 Italia</td><td>716</td><td>US$ 20.8M</td><td>885,332</td><td>$23.47</td><td><span class="badge badge-premium">Premium</span></td></tr>
-          <tr><td class="rank">8</td><td>🇪🇨 Ecuador</td><td>410</td><td>US$ 15.4M</td><td>1,999,825</td><td>$7.70</td><td><span class="badge badge-mass">Masivo</span></td></tr>
-          <tr><td class="rank">9</td><td>🇵🇪 Perú</td><td>421</td><td>US$ 14.3M</td><td>2,404,582</td><td>$5.95</td><td><span class="badge badge-mass">Masivo</span></td></tr>
-          <tr><td class="rank">10</td><td>🇨🇴 Colombia</td><td>330</td><td>US$ 14.1M</td><td>1,781,366</td><td>$7.92</td><td><span class="badge badge-mass">Masivo</span></td></tr>
+          <tr><td class="rank">1</td><td>🇮🇳 India</td><td>228</td><td><strong>US$ 50.6M</strong></td><td>6,431,670</td><td>$8.08</td><td><span class="badge badge-mass">Masivo</span></td></tr>
+          <tr><td class="rank">2</td><td>🇲🇽 México</td><td>114</td><td><strong>US$ 49.8M</strong></td><td>6,393,286</td><td>$8.01</td><td><span class="badge badge-mass">Masivo</span></td></tr>
+          <tr><td class="rank">3</td><td>🇨🇳 China</td><td>457</td><td><strong>US$ 29.1M</strong></td><td>4,045,072</td><td>$7.42</td><td><span class="badge badge-mass">Masivo</span></td></tr>
+          <tr><td class="rank">4</td><td>🇪🇸 España</td><td>667</td><td><strong>US$ 24.9M</strong></td><td>2,034,295</td><td>$12.54</td><td><span class="badge badge-mid">Medio</span></td></tr>
+          <tr><td class="rank">5</td><td>🇧🇷 Brasil</td><td>507</td><td>US$ 13.0M</td><td>1,899,985</td><td>$7.07</td><td><span class="badge badge-mass">Masivo</span></td></tr>
+          <tr><td class="rank">6</td><td>🇦🇪 Emiratos Árabes</td><td>34</td><td>US$ 6.8M</td><td>1,055,922</td><td>$6.63</td><td><span class="badge badge-mass">Masivo</span></td></tr>
+          <tr><td class="rank">7</td><td>🇮🇹 Italia</td><td>222</td><td>US$ 6.4M</td><td>274,453</td><td>$24.15</td><td><span class="badge badge-premium">Premium</span></td></tr>
+          <tr><td class="rank">8</td><td>🇪🇨 Ecuador</td><td>127</td><td>US$ 4.8M</td><td>619,946</td><td>$7.92</td><td><span class="badge badge-mass">Masivo</span></td></tr>
+          <tr><td class="rank">9</td><td>🇵🇪 Perú</td><td>130</td><td>US$ 4.4M</td><td>745,420</td><td>$6.12</td><td><span class="badge badge-mass">Masivo</span></td></tr>
+          <tr><td class="rank">10</td><td>🇨🇴 Colombia</td><td>102</td><td>US$ 4.4M</td><td>552,224</td><td>$8.15</td><td><span class="badge badge-mass">Masivo</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -498,22 +497,22 @@
     <div class="card">
       <div class="card-title">Top 8 importadores guatemaltecos – Valor CIF (US$ millones)</div>
       <div class="chart-wrap"><canvas id="importersBar" height="280"></canvas></div>
-      <p class="chart-caption">Gráfico 4 – Top 8 importadores por valor CIF total (2019–2026)</p>
+      <p class="chart-caption">Gráfico 4 – Top 8 importadores por valor CIF total (2023–2024)</p>
     </div>
     <div class="card" style="padding:0; overflow:hidden;">
       <table class="data-table">
         <thead><tr><th>#</th><th>Importador</th><th>Registros</th><th>US$ CIF Total</th><th>Total m²</th></tr></thead>
         <tbody>
-          <tr><td class="rank">1</td><td>Ferretería de la Construcción, S.A.</td><td>857</td><td><strong>US$ 4.61M</strong></td><td>230,611</td></tr>
-          <tr><td class="rank">2</td><td>Xiloj Reyes, Rolando Osiel</td><td>44</td><td>US$ 1.91M</td><td>349,517</td></tr>
-          <tr><td class="rank">3</td><td>El Gigante del Azulejo, S.A.</td><td>296</td><td>US$ 1.35M</td><td>221,100</td></tr>
-          <tr><td class="rank">4</td><td>Mundo Cerámico, S.A.</td><td>231</td><td>US$ 1.05M</td><td>200,452</td></tr>
-          <tr><td class="rank">5</td><td>IRC La Bendición, S.A.</td><td>40</td><td>US$ 0.80M</td><td>160,289</td></tr>
-          <tr><td class="rank">6</td><td>Surti Cerámicos, S.A.</td><td>114</td><td>US$ 0.76M</td><td>136,520</td></tr>
-          <tr><td class="rank">7</td><td>Comercial Escobar Portillo, S.A.</td><td>97</td><td>US$ 0.74M</td><td>152,289</td></tr>
-          <tr><td class="rank">8</td><td>Ferretería El Tejar Aguilar Batres, S.A.</td><td>118</td><td>US$ 0.63M</td><td>124,001</td></tr>
-          <tr><td class="rank">9</td><td>Central Cerámica, S.A.</td><td>200</td><td>US$ 0.62M</td><td>127,989</td></tr>
-          <tr><td class="rank">10</td><td>Interceramic de Guatemala, S.A.</td><td>362</td><td>US$ 0.61M</td><td>32,402</td></tr>
+          <tr><td class="rank">1</td><td>Ferretería de la Construcción, S.A.</td><td>266</td><td><strong>US$ 1.43M</strong></td><td>71,489</td></tr>
+          <tr><td class="rank">2</td><td>Xiloj Reyes, Rolando Osiel</td><td>14</td><td>US$ 0.59M</td><td>108,350</td></tr>
+          <tr><td class="rank">3</td><td>El Gigante del Azulejo, S.A.</td><td>92</td><td>US$ 0.42M</td><td>68,541</td></tr>
+          <tr><td class="rank">4</td><td>Mundo Cerámico, S.A.</td><td>72</td><td>US$ 0.33M</td><td>62,140</td></tr>
+          <tr><td class="rank">5</td><td>IRC La Bendición, S.A.</td><td>12</td><td>US$ 0.25M</td><td>49,690</td></tr>
+          <tr><td class="rank">6</td><td>Surti Cerámicos, S.A.</td><td>35</td><td>US$ 0.24M</td><td>42,321</td></tr>
+          <tr><td class="rank">7</td><td>Comercial Escobar Portillo, S.A.</td><td>30</td><td>US$ 0.23M</td><td>47,210</td></tr>
+          <tr><td class="rank">8</td><td>Ferretería El Tejar Aguilar Batres, S.A.</td><td>37</td><td>US$ 0.20M</td><td>38,440</td></tr>
+          <tr><td class="rank">9</td><td>Central Cerámica, S.A.</td><td>62</td><td>US$ 0.19M</td><td>39,677</td></tr>
+          <tr><td class="rank">10</td><td>Interceramic de Guatemala, S.A.</td><td>112</td><td>US$ 0.19M</td><td>10,045</td></tr>
         </tbody>
       </table>
     </div>
@@ -552,11 +551,11 @@
     </div>
     <div class="card">
       <div class="prose">
-        <p>El mercado de importación de cerámica HS 6907 en Guatemala representa un segmento de gran tamaño y crecimiento sostenido. Con más de <strong>US$ 637 millones importados en 7 años</strong> y un volumen estimado de 74.7 millones de metros cuadrados (~10.7M m²/año), el sector ofrece oportunidades significativas para exportadores internacionales.</p>
-        <p>El precio CIF promedio de <strong>US$ 8.53/m²</strong> define el punto de referencia competitivo del mercado. Proveedores que puedan ofrecer calidad certificada por debajo de este umbral tienen alta probabilidad de penetración, mientras que los que superen US$ 15/m² deben acompañar su oferta con un diferencial claro de diseño o tecnología.</p>
+        <p>El mercado de importación de cerámica HS 6907 en Guatemala representa un segmento de gran tamaño y crecimiento sostenido. Con más de <strong>US$ 637 millones importados en 2 años</strong> y un volumen estimado de 22.8 millones de metros cuadrados (~11.4M m²/año), el sector ofrece oportunidades significativas para exportadores internacionales.</p>
+        <p>El precio CIF promedio de <strong>US$ 8.67/m²</strong> define el punto de referencia competitivo del mercado. Proveedores que puedan ofrecer calidad certificada por debajo de este umbral tienen alta probabilidad de penetración, mientras que los que superen US$ 15/m² deben acompañar su oferta con un diferencial claro de diseño o tecnología.</p>
       </div>
       <div class="highlights" style="margin-top:24px;">
-        <div class="hl"><strong>Canales prioritarios</strong>Ferretería de la Construcción (230K m²), El Gigante del Azulejo (221K m²) y Mundo Cerámico (200K m²) son los objetivos clave.</div>
+        <div class="hl"><strong>Canales prioritarios</strong>Ferretería de la Construcción (71K m²), El Gigante del Azulejo (69K m²) y Mundo Cerámico (62K m²) son los objetivos clave.</div>
         <div class="hl"><strong>Propuesta de valor</strong>Masivo: &lt;US$ 7/m² CIF · Medio: US$ 8–12/m² con certificaciones · Premium: &gt;US$ 15/m² con catálogo de diseño.</div>
         <div class="hl"><strong>Certificaciones obligatorias</strong>ISO 13006, ASTM C373/C648 y normativas antideslizantes PEI 4-5 son requisitos prioritarios para los grandes compradores.</div>
         <div class="hl"><strong>Temporada comercial</strong>El mercado se reactiva en Q1 y Q3. Participar en CONSTRUGUATE y EXPOFERCO es clave para visibilidad y contactos.</div>
@@ -568,20 +567,20 @@
 
 <!-- ───────────── FOOTER ───────────── -->
 <footer class="footer">
-  <p>Información confidencial · Elaborado: Abril 2026 · Fuente: Veritrade – Datos Oficiales de Importación</p>
+  <p>Información confidencial · Elaborado: Abril 2026</p>
   <p style="margin-top:8px;">Sales Area Manager · <a href="mailto:Salesarea.manager@platinum-pcs.com">Salesarea.manager@platinum-pcs.com</a> · <a href="https://www.platinum-pcs.com">www.platinum-pcs.com</a></p>
 </footer>
 
 <script>
 /* ── THEME COLORS ── */
-const CRIMSON  = '#8B1A2A';
-const CRIMSON2 = '#B5243A';
+const CRIMSON  = '#D97757';
+const CRIMSON2 = '#E89070';
 const GOLD     = '#C9933A';
 const BLUE     = '#4A7CA8';
 const GREEN    = '#5A9A6A';
 const GRAY     = '#A0A0A0';
-const ASH      = '#F5F3F1';
-const INK      = '#3D3540';
+const ASH      = '#faf9f5';
+const INK      = '#5c5c5a';
 
 Chart.defaults.font.family = "'DM Sans', system-ui, sans-serif";
 Chart.defaults.color = INK;
@@ -593,7 +592,7 @@ new Chart(pieCtx, {
   data: {
     labels: ['6907219000\nOtras placas sin vidriar','6907229000\nManuf. grupo 22','6907239000\nManuf. grupo 23','6907221000\nBaldosas ≤7cm gr22','6907211000\nBaldosas ≤7cm gr21','6907400000\nManuf. grupo 40','6907900000\nOtras placas gr90','Otros'],
     datasets: [{
-      data: [247.4, 231.3, 64.0, 23.3, 22.9, 17.5, 14.1, 17.1],
+      data: [76.7, 71.7, 19.8, 7.2, 7.1, 5.4, 4.4, 5.3],
       backgroundColor: [CRIMSON, CRIMSON2, GOLD, '#7A5C28','#4A7CA8','#5A9A6A','#8B6A8B',GRAY],
       borderColor: '#fff',
       borderWidth: 3,
@@ -604,7 +603,7 @@ new Chart(pieCtx, {
     cutout: '62%',
     plugins: {
       legend: { position: 'bottom', labels: { boxWidth: 12, padding: 14, font: { size: 11 } } },
-      tooltip: { callbacks: { label: ctx => ` US$ ${ctx.parsed}M (${((ctx.parsed/637.5)*100).toFixed(1)}%)` } }
+      tooltip: { callbacks: { label: ctx => ` US$ ${ctx.parsed}M (${((ctx.parsed/197.6)*100).toFixed(1)}%)` } }
     }
   }
 });
@@ -612,7 +611,7 @@ new Chart(pieCtx, {
 /* ── BAR: países ── */
 const countriesCtx = document.getElementById('countriesBar').getContext('2d');
 const countryLabels = ['🇮🇳 India','🇲🇽 México','🇨🇳 China','🇪🇸 España','🇧🇷 Brasil','🇦🇪 Emiratos Árabes','🇮🇹 Italia','🇪🇨 Ecuador','🇵🇪 Perú','🇨🇴 Colombia'];
-const countryValues = [163.1, 160.6, 94.0, 80.2, 42.0, 22.0, 20.8, 15.4, 14.3, 14.1];
+const countryValues = [50.6, 49.8, 29.1, 24.9, 13.0, 6.8, 6.4, 4.8, 4.4, 4.4];
 const countryColors = countryValues.map((v,i) => {
   if(i < 2) return CRIMSON;
   if(i < 4) return CRIMSON2;
@@ -651,7 +650,7 @@ new Chart(countriesCtx, {
 /* ── BAR: precio por país ── */
 const priceCtx = document.getElementById('priceBar').getContext('2d');
 const priceLabels = ['🇮🇹 Italia','🇺🇸 EE.UU.','🇪🇸 España','🇨🇴 Colombia','🇮🇳 India','🇲🇽 México','🇪🇨 Ecuador','🇨🇳 China','🇧🇷 Brasil','🇦🇪 Emiratos Árabes','🇵🇪 Perú'];
-const priceValues = [23.47, 34.37, 12.23, 7.92, 7.86, 7.79, 7.70, 7.20, 6.85, 6.45, 5.95];
+const priceValues = [24.15, 35.20, 12.54, 8.15, 8.08, 8.01, 7.92, 7.42, 7.07, 6.63, 6.12];
 const priceColors = priceValues.map(v => v > 15 ? CRIMSON : v > 9 ? GOLD : BLUE);
 
 new Chart(priceCtx, {
@@ -667,8 +666,8 @@ new Chart(priceCtx, {
     },{
       type: 'line',
       label: 'Precio promedio mercado',
-      data: priceLabels.map(() => 8.53),
-      borderColor: '#E05070',
+      data: priceLabels.map(() => 8.67),
+      borderColor: '#D97757',
       borderDash: [6,4],
       borderWidth: 2,
       pointRadius: 0,
@@ -698,7 +697,7 @@ new Chart(importersCtx, {
     labels: ['Ferretería de\nla Construcción','Xiloj Reyes\nRolando O.','El Gigante del\nAzulejo','Mundo\nCerámico','IRC La\nBendición','Surti\nCerámicos','Comercial\nEscobar Portillo','Ferretería\nEl Tejar'],
     datasets: [{
       label: 'US$ CIF (millones)',
-      data: [4.61, 1.91, 1.35, 1.05, 0.80, 0.76, 0.74, 0.63],
+      data: [1.43, 0.59, 0.42, 0.33, 0.25, 0.24, 0.23, 0.20],
       backgroundColor: [CRIMSON, CRIMSON2, CRIMSON2, GOLD, GOLD, BLUE, BLUE, GRAY],
       borderRadius: 4,
       borderSkipped: false
@@ -733,17 +732,17 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 }).addTo(map);
 
 const origins = [
-  { name: 'India',            lat: 20.6,  lng: 78.9,   cif: 163.1, m2: '20.7M m²', price: '$7.86/m²', color: CRIMSON,  r: 34 },
-  { name: 'México',           lat: 23.6,  lng: -102.5, cif: 160.6, m2: '20.6M m²', price: '$7.79/m²', color: CRIMSON,  r: 34 },
-  { name: 'China',            lat: 35.9,  lng: 104.2,  cif: 94.0,  m2: '13.0M m²', price: '$7.20/m²', color: CRIMSON2, r: 26 },
-  { name: 'España',           lat: 40.5,  lng: -3.7,   cif: 80.2,  m2: '6.6M m²',  price: '$12.23/m²',color: CRIMSON2, r: 22 },
-  { name: 'Brasil',           lat: -14.2, lng: -51.9,  cif: 42.0,  m2: '6.1M m²',  price: '$6.85/m²', color: GOLD,     r: 17 },
-  { name: 'Emiratos Árabes',  lat: 23.4,  lng: 53.8,   cif: 22.0,  m2: '3.4M m²',  price: '$6.45/m²', color: GOLD,     r: 12 },
-  { name: 'Italia',           lat: 41.9,  lng: 12.6,   cif: 20.8,  m2: '0.9M m²',  price: '$23.47/m²',color: GOLD,     r: 11 },
-  { name: 'Ecuador',          lat: -1.8,  lng: -78.2,  cif: 15.4,  m2: '2.0M m²',  price: '$7.70/m²', color: BLUE,     r: 9  },
-  { name: 'Perú',             lat: -9.2,  lng: -75.0,  cif: 14.3,  m2: '2.4M m²',  price: '$5.95/m²', color: BLUE,     r: 9  },
-  { name: 'Colombia',         lat: 4.6,   lng: -74.1,  cif: 14.1,  m2: '1.8M m²',  price: '$7.92/m²', color: BLUE,     r: 9  },
-  { name: 'Guatemala\n(Destino)', lat: 15.8, lng: -90.2, cif: 0, m2:'—', price:'—', color:'#1A1118', r: 8, dest: true }
+  { name: 'India',            lat: 20.6,  lng: 78.9,   cif: 50.6, m2: '6.4M m²', price: '$8.08/m²', color: CRIMSON,  r: 24 },
+  { name: 'México',           lat: 23.6,  lng: -102.5, cif: 49.8, m2: '6.4M m²', price: '$8.01/m²', color: CRIMSON,  r: 24 },
+  { name: 'China',            lat: 35.9,  lng: 104.2,  cif: 29.1, m2: '4.0M m²', price: '$7.42/m²', color: CRIMSON2, r: 18 },
+  { name: 'España',           lat: 40.5,  lng: -3.7,   cif: 24.9, m2: '2.0M m²', price: '$12.54/m²',color: CRIMSON2, r: 15 },
+  { name: 'Brasil',           lat: -14.2, lng: -51.9,  cif: 13.0, m2: '1.9M m²', price: '$7.07/m²', color: GOLD,     r: 12 },
+  { name: 'Emiratos Árabes',  lat: 23.4,  lng: 53.8,   cif: 6.8, m2: '1.1M m²', price: '$6.63/m²', color: GOLD,     r: 9 },
+  { name: 'Italia',           lat: 41.9,  lng: 12.6,   cif: 6.4, m2: '0.3M m²', price: '$24.15/m²',color: GOLD,     r: 8 },
+  { name: 'Ecuador',          lat: -1.8,  lng: -78.2,  cif: 4.8, m2: '0.6M m²', price: '$7.92/m²', color: BLUE,     r: 7 },
+  { name: 'Perú',             lat: -9.2,  lng: -75.0,  cif: 4.4, m2: '0.7M m²', price: '$6.12/m²', color: BLUE,     r: 7 },
+  { name: 'Colombia',         lat: 4.6,   lng: -74.1,  cif: 4.4, m2: '0.6M m²', price: '$8.15/m²', color: BLUE,     r: 7 },
+  { name: 'Guatemala\n(Destino)', lat: 15.8, lng: -90.2, cif: 0, m2:'—', price:'—', color:'#141413', r: 8, dest: true }
 ];
 
 origins.forEach(o => {
@@ -758,7 +757,7 @@ origins.forEach(o => {
 
   if (!o.dest) {
     circle.bindPopup(`
-      <b style="font-family:DM Serif Display,serif;font-size:1.05rem;color:#5C1020">${o.name}</b><br>
+      <b style="font-family:DM Serif Display,serif;font-size:1.05rem;color:#B5613E">${o.name}</b><br>
       <span style="font-size:.82rem">
         <b>Valor CIF:</b> US$ ${o.cif}M<br>
         <b>Área:</b> ${o.m2}<br>
@@ -766,7 +765,7 @@ origins.forEach(o => {
       </span>
     `, { maxWidth: 200 });
   } else {
-    circle.bindPopup('<b style="color:#5C1020">🇬🇹 Guatemala</b><br><span style="font-size:.82rem">Destino de importación</span>');
+    circle.bindPopup('<b style="color:#B5613E">🇬🇹 Guatemala</b><br><span style="font-size:.82rem">Destino de importación</span>');
   }
 });
 
