@@ -10,9 +10,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
   :root {
-    --crimson:    #D97757;
-    --crimson-lt: #E89070;
-    --crimson-dk: #B5613E;
+    --crimson:    #C4622D;
+    --crimson-lt: #D4845A;
+    --crimson-dk: #9E4E24;
     --gold:       #C9933A;
     --gold-lt:    #E8B96A;
     --ink:        #141413;
@@ -392,21 +392,6 @@
         <div class="chart-wrap"><canvas id="pieChart" height="260"></canvas></div>
         <p class="chart-caption">Gráfico 1 – Distribución porcentual HS 6907 (2023–2024)</p>
       </div>
-      <div class="card" style="padding:0; overflow:hidden;">
-        <table class="data-table">
-          <thead><tr><th>Subpartida</th><th>Descripción</th><th>US$ CIF</th><th>Registros</th></tr></thead>
-          <tbody>
-            <tr><td class="rank">—</td><td>6907219000</td><td><strong>US$ 247.4M</strong></td><td>2,758</td></tr>
-            <tr><td class="rank">—</td><td>6907229000</td><td><strong>US$ 231.3M</strong></td><td>2,412</td></tr>
-            <tr><td class="rank">—</td><td>6907239000</td><td>US$ 64.0M</td><td>804</td></tr>
-            <tr><td class="rank">—</td><td>6907221000</td><td>US$ 23.3M</td><td>606</td></tr>
-            <tr><td class="rank">—</td><td>6907211000</td><td>US$ 22.9M</td><td>633</td></tr>
-            <tr><td class="rank">—</td><td>6907400000</td><td>US$ 17.5M</td><td>380</td></tr>
-            <tr><td class="rank">—</td><td>6907900000</td><td>US$ 14.1M</td><td>1,301</td></tr>
-            <tr><td class="rank">—</td><td>Otros</td><td>US$ 17.1M</td><td>668</td></tr>
-          </tbody>
-        </table>
-      </div>
     </div>
   </section>
 
@@ -422,7 +407,7 @@
       <div class="card-title">Mapa de flujos de importación – Guatemala HS 6907</div>
       <div id="map"></div>
       <div class="map-legend">
-        <div class="map-legend-item"><div class="map-legend-dot" style="background:#D97757;width:20px;height:20px;"></div> &gt; US$ 100M</div>
+        <div class="map-legend-item"><div class="map-legend-dot" style="background:#C4622D;width:20px;height:20px;"></div> &gt; US$ 100M</div>
         <div class="map-legend-item"><div class="map-legend-dot" style="background:#C9933A;width:15px;height:15px;"></div> US$ 50–100M</div>
         <div class="map-legend-item"><div class="map-legend-dot" style="background:#4A7CA8;width:12px;height:12px;"></div> US$ 20–50M</div>
         <div class="map-legend-item"><div class="map-legend-dot" style="background:#7DB87D;width:9px;height:9px;"></div> US$ 10–22M</div>
@@ -568,13 +553,14 @@
 <!-- ───────────── FOOTER ───────────── -->
 <footer class="footer">
   <p>Información confidencial · Elaborado: Abril 2026</p>
-  <p style="margin-top:8px;">Sales Area Manager · <a href="mailto:Salesarea.manager@platinum-pcs.com">Salesarea.manager@platinum-pcs.com</a> · <a href="https://www.platinum-pcs.com">www.platinum-pcs.com</a></p>
+  <p style="margin-top:8px;"><a href="https://www.platinum-pcs.com">www.platinum-pcs.com</a></p>
+  <p style="margin-top:6px;"><a href="mailto:info@platinum-pcs.com">info@platinum-pcs.com</a></p>
 </footer>
 
 <script>
 /* ── THEME COLORS ── */
-const CRIMSON  = '#D97757';
-const CRIMSON2 = '#E89070';
+const CRIMSON  = '#C4622D';
+const CRIMSON2 = '#D4845A';
 const GOLD     = '#C9933A';
 const BLUE     = '#4A7CA8';
 const GREEN    = '#5A9A6A';
@@ -667,7 +653,7 @@ new Chart(priceCtx, {
       type: 'line',
       label: 'Precio promedio mercado',
       data: priceLabels.map(() => 8.67),
-      borderColor: '#D97757',
+      borderColor: '#C4622D',
       borderDash: [6,4],
       borderWidth: 2,
       pointRadius: 0,
@@ -757,7 +743,7 @@ origins.forEach(o => {
 
   if (!o.dest) {
     circle.bindPopup(`
-      <b style="font-family:DM Serif Display,serif;font-size:1.05rem;color:#B5613E">${o.name}</b><br>
+      <b style="font-family:DM Serif Display,serif;font-size:1.05rem;color:#9E4E24">${o.name}</b><br>
       <span style="font-size:.82rem">
         <b>Valor CIF:</b> US$ ${o.cif}M<br>
         <b>Área:</b> ${o.m2}<br>
@@ -765,7 +751,7 @@ origins.forEach(o => {
       </span>
     `, { maxWidth: 200 });
   } else {
-    circle.bindPopup('<b style="color:#B5613E">🇬🇹 Guatemala</b><br><span style="font-size:.82rem">Destino de importación</span>');
+    circle.bindPopup('<b style="color:#9E4E24">🇬🇹 Guatemala</b><br><span style="font-size:.82rem">Destino de importación</span>');
   }
 });
 
